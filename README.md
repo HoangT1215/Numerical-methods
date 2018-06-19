@@ -1,1 +1,2 @@
 # Numerical-methods
+This repo contains my notes and code during the Georgia Tech REU 2018 with Professor Molei Tao. Our research topic is numerical optimal control. I also include side papers that are relevant to our topic, though we don't actually use it during the REU.
