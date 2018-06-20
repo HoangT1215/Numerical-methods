@@ -7,7 +7,7 @@ k = 0.01;
 h = 0.01;
 T = 5;
 
-SpaceSpan=[0:k:1];
+SpaceSpan=transpose([0:k:1]);
 TimeSteps=round(T/h);
 
 N = length(SpaceSpan) - 1;
@@ -23,7 +23,7 @@ for i = 1:TimeSteps
   u(2:end-1)=inv(eye(N-1)/h-L)*(u(2:end-1)/h+b);
   
   set(handle, 'ydata', u);
-  title('Time=',num2str(i*h));
+  title(['Time=',num2str(i*h)]);
   drawnow();
-endfor
+end
   
